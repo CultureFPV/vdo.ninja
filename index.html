@@ -2712,8 +2712,8 @@
 			///// The following lets you set the defaults
 
 			// session.webcamonly // true,false
-			session.stereo == 1
-			session.audiobitrate == 320
+			session.stereo == 1;
+			session.audiobitrate == 320;
 			// session.view // "xxxx" ; the stream ID or a list of Stream IDs to Connect to. Not the same as &noaudio/&novideo. Set to "" (empty) if you don't wish to connect to any.
 			// session.remote // See docs, but allows for remote stats monitoring and remote focus/zoom control
 			// session.optimize  // Whether to optimize invisible scenes in OBS. See docs.vdo.ninja. Setting to 0 will pause the video/audio when not visible in OBS
@@ -2728,7 +2728,7 @@
 			session.totalRoomBitrate == 5000; // int, kbps -- you can set the default quality of the group room here
 			// session.height // int  ; height to publish a video stream at.  Will fail if not supported by the camera
 			// session.width // int ; see above
-			session.quality = 0 // int  -- if setting == 0, then than the default resolution will be 1080p, instead of 720p60 (q=1) , while  q=2 = 360p30.
+			session.quality = 0; // int  -- if setting == 0, then than the default resolution will be 1080p, instead of 720p60 (q=1) , while  q=2 = 360p30.
 			// session.sink // Output device to playback audio to. see the docs
 			// session.offsetChannel // int
 			// session.audioChannels // int
@@ -2736,7 +2736,7 @@
 			// session.frameRate // int ; publishing frame rate. will fail if camera does not support it.
 			// session.sync // see the docs
 			// session.buffer // int in milliseconds ; see the docs
-			session.roomid == "SendIt" // "yyyy"  -- the room name to use.  alphanumeric.
+			session.roomid == "SendIt"; // "yyyy"  -- the room name to use.  alphanumeric.
 			session.password == "iamlive"; // null will ask the user for a password
 			// session.scene // the scene name. Scene 0, 1, ... 8, or any custom scene name is supported.  STRING value. Needed to have a clean view link of a guest stream
 			// session.title // "zzzz"   ; sets the title of the browser page.
