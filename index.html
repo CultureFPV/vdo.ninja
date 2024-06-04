@@ -2712,8 +2712,8 @@
 			///// The following lets you set the defaults
 
 			// session.webcamonly // true,false
-			session.stereo = 1;
-			session.audiobitrate = 320;
+ session.stereo = 0; // 0,1,2,3,4,5
+session.audiobitrate = 320;// int in kbps
 			// session.view // "xxxx" ; the stream ID or a list of Stream IDs to Connect to. Not the same as &noaudio/&novideo. Set to "" (empty) if you don't wish to connect to any.
 			// session.remote // See docs, but allows for remote stats monitoring and remote focus/zoom control
 			// session.optimize  // Whether to optimize invisible scenes in OBS. See docs.vdo.ninja. Setting to 0 will pause the video/audio when not visible in OBS
@@ -2725,10 +2725,10 @@
 			// session.codec // default codec; maybe h264 is useful? the default is up to the browser normally
 			// session.scale // By default, scale is self-optimizing, but you can set a value of 1 to 100 to choose the playback scale of all incoming video streams
 			// session.bitrate  // int in kbps -- you can set the default max target bitrate here
-			session.totalRoomBitrate = 5000; // int, kbps -- you can set the default quality of the group room here
+session.totalRoomBitrate = 5000; // int, kbps -- you can set the default quality of the group room here
 			// session.height // int  ; height to publish a video stream at.  Will fail if not supported by the camera
 			// session.width // int ; see above
-			session.quality = 0; // int  -- if setting == 0, then than the default resolution will be 1080p, instead of 720p60 (q=1) , while  q=2 = 360p30.
+session.quality = 0; // int  -- if setting == 0, then than the default resolution will be 1080p, instead of 720p60 (q=1) , while  q=2 = 360p30.
 			// session.sink // Output device to playback audio to. see the docs
 			// session.offsetChannel // int
 			// session.audioChannels // int
@@ -2736,8 +2736,7 @@
 			// session.frameRate // int ; publishing frame rate. will fail if camera does not support it.
 			// session.sync // see the docs
 			// session.buffer // int in milliseconds ; see the docs
-			session.roomid = "SendIt"; // "yyyy"  -- the room name to use.  alphanumeric.
-			session.password = "iamlive"; // null will ask the user for a password
+session.roomid ="SendIt"; // "yyyy"  -- the room name to use.  alphanumeric.
 			// session.scene // the scene name. Scene 0, 1, ... 8, or any custom scene name is supported.  STRING value. Needed to have a clean view link of a guest stream
 			// session.title // "zzzz"   ; sets the title of the browser page.
 			// session.introOnClean = true; // this will load the page with the webcam selection screen if &push or &room is in the URL; no need to use &webcam.
@@ -2745,15 +2744,15 @@
 			// session.apiserver = "wss://api.vdo.ninja:443"; // specifiy a custom websocket API URL.
 			// session.darkmode = false; // enable or disable the dark style theme as the default
 			// session.defaultBackgroundImages = ["./media/bg_sample1.webp", "./media/bg_sample2.webp"]; // for &effects=5 (virtual backgrounds)
-			// session.hidehome = true; // If used, 'hide home' will make the landing page inaccessible, along with hiding a few go-home elements.
-			// session.language="auto"; // "blank" is another option, or a specific language, like "de" or "pt-br"
+session.hidehome = true; // If used, 'hide home' will make the landing page inaccessible, along with hiding a few go-home elements.
 			// session.record = false; // uncomment to block users from being able to record via vdo.ninja's built in recording function
 			// session.whipServerURL = "wss://whip.vdo.ninja"; // If you deploy your own whip websocket service
 			
-			// session.GDRIVE_CLIENT_ID = "877199999934-67tq62xxxxxxxxxxxxxxxxxxxxxxxxx.apps.googleusercontent.com"; // get your own id/key from Google Cloud
-			// session.GDRIVE_API_KEY = 'AINNNNNNNNNNNNNNN-39s99999999999999999'; // lets you upload to google drive if self hosting.
-			
 			// session.decrypted = session.decodeInvite("U2FsdGVkX1+d58DFIHoO3EQZSuX86ch4PqW2ouztnJ0="); // get a code from invite.cam
+
+
+
+
 			
 		</script>
 		<script type="text/javascript" crossorigin="anonymous" id="lib-js" src="./lib.js?ver=1168"></script>
